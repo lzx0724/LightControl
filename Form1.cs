@@ -11,8 +11,16 @@ using System.Windows.Forms;
 using Microsoft.CognitiveServices.Speech;
 using Newtonsoft.Json;
 
+<<<<<<< HEAD
 namespace LightControl
 {
+=======
+
+namespace LightControl
+{
+    
+
+>>>>>>> second commit
     public partial class Form1 : Form
     {
         public Form1()
@@ -27,6 +35,12 @@ namespace LightControl
         SpeechRecognizer recognizer;
         bool isRecording = false;
 
+<<<<<<< HEAD
+=======
+        //记录电器状态
+        bool control = false;
+
+>>>>>>> second commit
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -155,6 +169,41 @@ namespace LightControl
                 {
                     CloseKeLight();
                 }
+<<<<<<< HEAD
+=======
+                else if (intent.Equals("allon", StringComparison.OrdinalIgnoreCase))
+                {
+                    OpenChuLight();
+                    OpenKeLight();
+                }
+                else if (intent.Equals("alloff", StringComparison.OrdinalIgnoreCase))
+                {
+                    CloseChuLight();
+                    CloseKeLight();
+                }
+                else if (intent.Equals("kefollow", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (control)
+                    {
+                        OpenKeLight();
+                    }
+                    else if (!control)
+                    {
+                        CloseKeLight();
+                    }
+                }
+                else if (intent.Equals("chufollow", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (control)
+                    {
+                        OpenChuLight();
+                    }
+                    else if (!control)
+                    {
+                        CloseChuLight();
+                    }
+                }
+>>>>>>> second commit
             }
 
         }
@@ -221,6 +270,10 @@ namespace LightControl
             {
                 pictureBox1.Load("LightOn.png");
             });
+<<<<<<< HEAD
+=======
+            control = true;
+>>>>>>> second commit
         }
 
         private void CloseChuLight()
@@ -229,6 +282,10 @@ namespace LightControl
             {
                 pictureBox1.Load("LightOff.png");
             });
+<<<<<<< HEAD
+=======
+            control = false;
+>>>>>>> second commit
         }
 
         private void OpenKeLight()
@@ -237,6 +294,10 @@ namespace LightControl
             {
                 pictureBox2.Load("LightOn.png");
             });
+<<<<<<< HEAD
+=======
+            control = true;
+>>>>>>> second commit
         }
 
         private void CloseKeLight()
@@ -245,6 +306,10 @@ namespace LightControl
             {
                 pictureBox2.Load("LightOff.png");
             });
+<<<<<<< HEAD
+=======
+            control = false;
+>>>>>>> second commit
         }
 
         private void MakesureRunInUI(Action action)
@@ -274,9 +339,13 @@ namespace LightControl
             }
         }
 
+<<<<<<< HEAD
         /*private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }*/
+=======
+        
+>>>>>>> second commit
     }
 }

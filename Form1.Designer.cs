@@ -32,6 +32,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
+=======
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+>>>>>>> second commit
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -49,10 +54,17 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(16, 254);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(473, 123);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(78, 254);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(411, 123);
+>>>>>>> second commit
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -70,19 +82,50 @@
             // 
             // pictureBox2
             // 
+<<<<<<< HEAD
             this.pictureBox2.Location = new System.Drawing.Point(16, 385);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(473, 123);
+=======
+            this.pictureBox2.Location = new System.Drawing.Point(78, 385);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(411, 123);
+>>>>>>> second commit
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
+<<<<<<< HEAD
+=======
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(13, 254);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(63, 25);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "厨房";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(13, 385);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(63, 25);
+            this.textBox3.TabIndex = 4;
+            this.textBox3.Text = "客厅";
+            // 
+>>>>>>> second commit
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 552);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+>>>>>>> second commit
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -104,6 +147,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+>>>>>>> second commit
     }
 }
 
