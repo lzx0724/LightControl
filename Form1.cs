@@ -10,19 +10,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.CognitiveServices.Speech;
 using Newtonsoft.Json;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 namespace LightControl
 {
 =======
+=======
+using System.Speech.Synthesis;
+
+>>>>>>> first commit of project
 
 namespace LightControl
 {
     
 
+<<<<<<< HEAD
 >>>>>>> second commit
     public partial class Form1 : Form
     {
+=======
+    public partial class Form1 : Form
+    {
+
+
+>>>>>>> first commit of project
         public Form1()
         {
             InitializeComponent();
@@ -36,11 +48,23 @@ namespace LightControl
         bool isRecording = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //记录电器状态
         bool control = false;
 
 >>>>>>> second commit
+=======
+        //记录电器状态
+        bool control = false;
+
+        //语音朗读
+        SpeechSynthesizer ss = new SpeechSynthesizer();
+
+        
+        
+
+>>>>>>> first commit of project
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -95,12 +119,20 @@ namespace LightControl
                 // 启动识别器
                 await recognizer.StartContinuousRecognitionAsync();
                 button1.Text = "停止";
+<<<<<<< HEAD
+=======
+                
+>>>>>>> first commit of project
             }
             else
             {
                 // 停止识别器
                 await recognizer.StopContinuousRecognitionAsync();
                 button1.Text = "开始";
+<<<<<<< HEAD
+=======
+                ss.Speak("谢谢使用");
+>>>>>>> first commit of project
             }
 
             button1.Enabled = true;
@@ -140,6 +172,13 @@ namespace LightControl
             // 第三步
             // 按照意图控制灯
 
+<<<<<<< HEAD
+=======
+            ss.Rate = 1;
+            ss.Volume = 100;
+            //ss.SpeakAsync("Hello word");
+
+>>>>>>> first commit of project
             /*if (!string.IsNullOrEmpty(intent))
             {
                 if (intent.Equals("TurnOn", StringComparison.OrdinalIgnoreCase))
@@ -156,30 +195,55 @@ namespace LightControl
                 if (intent.Equals("chuon", StringComparison.OrdinalIgnoreCase))
                 {
                     OpenChuLight();
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("chuoff", StringComparison.OrdinalIgnoreCase))
                 {
                     CloseChuLight();
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("keon", StringComparison.OrdinalIgnoreCase))
                 {
                     OpenKeLight();
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("keoff", StringComparison.OrdinalIgnoreCase))
                 {
                     CloseKeLight();
+<<<<<<< HEAD
                 }
 <<<<<<< HEAD
 =======
+=======
+                    ss.Speak("ok");
+                }
+>>>>>>> first commit of project
                 else if (intent.Equals("allon", StringComparison.OrdinalIgnoreCase))
                 {
                     OpenChuLight();
                     OpenKeLight();
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("alloff", StringComparison.OrdinalIgnoreCase))
                 {
                     CloseChuLight();
                     CloseKeLight();
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("kefollow", StringComparison.OrdinalIgnoreCase))
                 {
@@ -191,6 +255,10 @@ namespace LightControl
                     {
                         CloseKeLight();
                     }
+<<<<<<< HEAD
+=======
+                    ss.Speak("ok");
+>>>>>>> first commit of project
                 }
                 else if (intent.Equals("chufollow", StringComparison.OrdinalIgnoreCase))
                 {
@@ -201,9 +269,16 @@ namespace LightControl
                     else if (!control)
                     {
                         CloseChuLight();
+<<<<<<< HEAD
                     }
                 }
 >>>>>>> second commit
+=======
+                        
+                    }
+                    ss.Speak("ok");
+                }
+>>>>>>> first commit of project
             }
 
         }
@@ -271,9 +346,13 @@ namespace LightControl
                 pictureBox1.Load("LightOn.png");
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             control = true;
 >>>>>>> second commit
+=======
+            control = true;
+>>>>>>> first commit of project
         }
 
         private void CloseChuLight()
@@ -283,9 +362,13 @@ namespace LightControl
                 pictureBox1.Load("LightOff.png");
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             control = false;
 >>>>>>> second commit
+=======
+            control = false;
+>>>>>>> first commit of project
         }
 
         private void OpenKeLight()
@@ -295,9 +378,13 @@ namespace LightControl
                 pictureBox2.Load("LightOn.png");
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             control = true;
 >>>>>>> second commit
+=======
+            control = true;
+>>>>>>> first commit of project
         }
 
         private void CloseKeLight()
@@ -307,9 +394,13 @@ namespace LightControl
                 pictureBox2.Load("LightOff.png");
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             control = false;
 >>>>>>> second commit
+=======
+            control = false;
+>>>>>>> first commit of project
         }
 
         private void MakesureRunInUI(Action action)
@@ -340,6 +431,7 @@ namespace LightControl
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /*private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -347,5 +439,8 @@ namespace LightControl
 =======
         
 >>>>>>> second commit
+=======
+        
+>>>>>>> first commit of project
     }
 }
